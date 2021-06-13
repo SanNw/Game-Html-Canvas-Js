@@ -1,0 +1,45 @@
+<canvas id="meu_canvas" width="300" height="300"></canvas>
+<script>
+    // Canvas e contexto
+    canvas = document.getElementById('meu_canvas');
+    context = canvas.getContext('2d');
+
+    // dados da bala
+    var x = 20;
+    var y = 100;
+    var raio = 5;
+
+    // momento incial
+    var anterior = new Date().getTime();
+
+    // iniciar animação
+    requestAnimationFrame(mexerBola);
+
+    // função de animação
+    function mexerBola() {
+        // momento atual
+        var agora = new Date().getTime();
+
+        // diferença
+        var decorrido = agora - anterior;
+        
+        // limpar o canvas
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // desenhar a bola
+        context.beginPath();
+        context.arc(x, y, raio, 0, Math.PI*2);
+        context.fill();
+
+        // deslocar 20 pixels para a direita
+        var velocidade = 20;
+        x += velocidade * decorrido / 1000;
+
+        // guardamos o instante para o próximo ciclo
+        anterior = agora
+
+        //chamar o próximo ciclo da animação
+        requestAnimationFrame(mexerBola);
+    }
+
+</script>
