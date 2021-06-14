@@ -9,7 +9,7 @@ function Heroi(context, teclado, animacao) {
    this.x = 0;
    this.y = 0;
    this.direcao = DIRECAO_DIREITA;
-}
+} 
 Heroi.prototype = {
    atualizar: function() {
       if (this.teclado.pressionada(SETA_ESQUERDA) && this.x > 0) {

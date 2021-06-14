@@ -8,7 +8,7 @@ function Bola(context) {
    // Atributos de desenho padrão
    this.cor = 'black';
    this.raio = 10;
-}
+} 
 Bola.prototype = {
    atualizar: function() {
       var ctx = this.context;

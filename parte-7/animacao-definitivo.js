@@ -5,7 +5,7 @@ function Animacao(context) {
    this.processamentos = [];
    this.spritesExcluir = [];
    this.processamentosExcluir = [];
-}
+} 
 Animacao.prototype = {
    novoSprite: function(sprite) {
       this.sprites.push(sprite);

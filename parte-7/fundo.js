@@ -3,7 +3,7 @@ function Fundo(context, imagem) {
    this.imagem = imagem;
    this.velocidade = 0;
    this.posicaoEmenda = 0;
-}
+} 
 Fundo.prototype = {
    atualizar: function() {
       // Atualizar a posição de emenda

@@ -1,4 +1,4 @@
-function Tiro(context, nave) {
+function Tiro(context, nave) { 
    this.context = context;
    this.nave = nave;
    

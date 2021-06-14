@@ -1,7 +1,7 @@
 function Animacao(context) {
    this.context = context;
    this.sprites = [];
-   this.ligado = false;
+   this.ligado = false; 
 }
 Animacao.prototype = {
    novoSprite: function(sprite) {

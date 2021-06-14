@@ -1,8 +1,8 @@
-function Animacao(context) {
+function Animacao(context) { 
    this.context = context;
    this.sprites = [];
    this.ligado = false;
-}
+}  
 Animacao.prototype = {
    novoSprite: function(sprite) {
       this.sprites.push(sprite);

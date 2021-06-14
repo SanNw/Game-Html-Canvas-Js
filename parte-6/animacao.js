@@ -4,7 +4,7 @@ function Animacao(context) {
    this.ligado = false;
 }
 Animacao.prototype = {
-   novoSprite: function(sprite) {
+   novoSprite: function(sprite) { 
       this.sprites.push(sprite);
       sprite.animacao = this;
    },
